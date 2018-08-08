@@ -96,12 +96,13 @@ Copy the "Sensors" folder into "~/tinyos-main/apps" Then, execute
 To install it on a TelosB device, first determine what ID you want to use, then run the following, replacing "X" with your desired ID number
 
     make telosb reinstall,X
-Do this for all, but the base node, assigning each one a unique ID number. Next, the base node will be programmed.
+Do this for all but the base node, assigning each one a unique ID number. Next, the base node will be programmed.
 
     cd ~/tinyos-main/apps/BaseStation
     make telosb install
-    
-Finally, to run the data extraction program, execute:
+
+### Testing sensors
+To run the data extraction program, execute:
 
     cd ~/tinyos-main/apps/Sensors
     motelist
